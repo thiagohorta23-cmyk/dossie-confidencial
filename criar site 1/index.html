@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Análise Comportamental Avançada</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+<h1>Análise Comportamental Avançada</h1>
+<p>Identifique padrões e avalie o nível de risco percebido.</p>
+<button onclick="startTest()">Iniciar Avaliação</button>
+</section>
+
+<section id="quiz" class="hidden">
+<h2>Questionário Estratégico</h2>
+<div id="questions"></div>
+<button onclick="calculateRisk()">Gerar Resultado</button>
+</section>
+
+<section id="result" class="hidden">
+<h2>Resultado da Análise</h2>
+<p id="score"></p>
+<p id="classification"></p>
+<p id="explanation"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
