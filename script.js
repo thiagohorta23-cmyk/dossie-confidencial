@@ -1,19 +1,35 @@
 const questions = [
-{ text: "Mudança repentina de rotina", weight: 2 },
-{ text: "Uso excessivo e reservado do celular", weight: 3 },
-{ text: "Diminuição de contato físico", weight: 2 },
-{ text: "Irritação sem motivo claro", weight: 1 },
-{ text: "Ausências não explicadas", weight: 3 },
-{ text: "Mudança brusca de aparência", weight: 1 },
-{ text: "Proteção excessiva de senhas", weight: 2 },
-{ text: "Respostas vagas sobre compromissos", weight: 2 },
-{ text: "Redução de tempo juntos", weight: 2 },
-{ text: "Aumento de segredos financeiros", weight: 3 },
-{ text: "Mudança de padrões de sono", weight: 1 },
-{ text: "Comparações frequentes com outras pessoas", weight: 2 },
-{ text: "Defensividade exagerada", weight: 2 },
-{ text: "Evita conversas profundas", weight: 1 },
-{ text: "Mudança no interesse emocional", weight: 3 }
+
+/* ROTINA */
+{ text:"Mudança repentina de rotina sem explicação clara", weight:2 },
+{ text:"Aumento inesperado de compromissos fora de casa", weight:3 },
+{ text:"Alterações frequentes nos horários habituais", weight:2 },
+{ text:"Justificativas vagas para atrasos", weight:3 },
+
+/* COMUNICAÇÃO */
+{ text:"Redução significativa na comunicação diária", weight:2 },
+{ text:"Respostas defensivas a perguntas simples", weight:3 },
+{ text:"Evita conversas mais profundas", weight:2 },
+{ text:"Demonstra irritação sem motivo aparente", weight:2 },
+
+/* COMPORTAMENTO DIGITAL */
+{ text:"Uso excessivo e reservado do celular", weight:3 },
+{ text:"Proteção excessiva de senhas e dispositivos", weight:3 },
+{ text:"Apaga histórico ou notificações com frequência", weight:3 },
+{ text:"Muda o celular de posição ao se aproximar", weight:2 },
+
+/* CONEXÃO EMOCIONAL */
+{ text:"Diminuição do contato físico", weight:2 },
+{ text:"Menor demonstração de afeto", weight:2 },
+{ text:"Distanciamento emocional perceptível", weight:3 },
+{ text:"Comparações frequentes com outras pessoas", weight:2 },
+
+/* FINANCEIRO */
+{ text:"Despesas não explicadas", weight:3 },
+{ text:"Mudança no padrão de gastos", weight:2 },
+{ text:"Transações financeiras pouco claras", weight:3 },
+{ text:"Resistência em falar sobre dinheiro", weight:2 }
+
 ];
 
 function startTest(){
@@ -80,3 +96,4 @@ explanation = "Alta concentração de sinais. Recomenda-se conversa clara e aval
 document.getElementById("classification").innerText = classification;
 document.getElementById("explanation").innerText = explanation;
 }
+
